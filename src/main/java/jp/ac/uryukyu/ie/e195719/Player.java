@@ -1,13 +1,15 @@
 package jp.ac.uryukyu.ie.e195719;
-public class Player {
-    String name;
-    int strong;
-    public void  player_strong(){
-        StrengthDiceEyes sd = new StrengthDiceEyes();
-        sd.strength_dice_eyes();
-        strong = sd.getMagnification();
-    }
+/**
+ * プレイヤークラス。
+ * Created by e195719 on 2020/1/20.
+ */
+public class Player extends Character{
+    /**
+     * コンストラクタ。名前を指定する。
+     *
+     * @param name      プレイヤーの名前
+     */
     Player (String name){
-        this.name = name; //カイジ
+        super(name); //カイジ
     }
 }
