@@ -11,5 +11,6 @@ public class Player extends Character{
      */
     Player (String name){
         super(name); //カイジ
+        System.out.println(name + "のターン！");
     }
 }

@@ -5,9 +5,9 @@ public class GameMaster {
         p.player_strong();
         Enemy e = new Enemy("班長");
         e.player_strong();
-        if(p.strong>e.strong){
+        if(p.strength_dice_eyes > e.strength_dice_eyes){
             System.out.println(p.name+"の勝利！");
-        }else if(p.strong==e.strong){
+        }else if(p.strength_dice_eyes == e.strength_dice_eyes){
             System.out.println("両者引き分け！");
         }else{
             System.out.println(e.name+"の勝利！");

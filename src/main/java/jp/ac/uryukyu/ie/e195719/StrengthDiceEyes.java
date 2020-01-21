@@ -24,15 +24,15 @@ public class StrengthDiceEyes{
             int a = dice_eyes.getDice_eyes().get(0);
             int b = dice_eyes.getDice_eyes().get(1);
             int c = dice_eyes.getDice_eyes().get(2); //[a, b, c]
-            if(a + b + c == 3){           //重複組合せ{1, 1, 1}のとき。
+            if(a + b + c == 3){           //[1, 1, 1]のとき。
                 System.out.println(i+1+"投目："+dice_eyes.getDice_eyes());
                 setMagnification(5);
                 break;
-            }else if(a == b & b == c){    //重複組合せ{2, 2, 2},{3, 3, 3}...のとき。
+            }else if(a == b & b == c){    //重複組合せ[2, 2, 2],[3, 3, 3]...のとき。
                 System.out.println(i+1+"投目："+dice_eyes.getDice_eyes());
                 setMagnification(3);
                 break;
-            }else if(a + b + c == 15 & a != 3 && b != 3 && c != 3){  //重複組合せ{4, 5, 6}
+            }else if(a + b + c == 15 & a != 3 && b != 3 && c != 3){  //重複組合せ{4, 5, 6}のとき。
                 System.out.println(i+1+"投目："+dice_eyes.getDice_eyes());
                 setMagnification(2);
                 break;
@@ -44,7 +44,7 @@ public class StrengthDiceEyes{
                 System.out.println(i+1+"投目："+dice_eyes.getDice_eyes());
                 setMagnification(-1);
                 i++;
-            }else {     //重複組合せ{1, 1, 4},{3, 5, 3}などのとき。
+            }else {     //重複組合せ{1, 1, 4},{6, 6, 3}などのとき。
                 System.out.println(i+1+"投目："+dice_eyes.getDice_eyes());
                 setMagnification(1);
                 break;

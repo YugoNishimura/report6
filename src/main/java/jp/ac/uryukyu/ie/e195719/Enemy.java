@@ -11,5 +11,6 @@ public class Enemy extends Character{
      */
     Enemy (String name){
         super(name); //班長
+        System.out.println(name + "のターン！");
     }
 }
